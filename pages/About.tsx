@@ -7,7 +7,7 @@ const About = () => {
     <div className="bg-white">
       <section className="relative py-32 bg-slate-900 text-white overflow-hidden">
         <div className="absolute inset-0 opacity-40">
-          <img src="./images/adam-winger-FJtz_ASf_BI-unsplash.jpg" alt="Background Scenic" className="w-full h-full object-cover" />
+          <img src="images/adam-winger-FJtz_ASf_BI-unsplash.jpg" alt="Background Scenic" className="w-full h-full object-cover" />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 text-center">
           <h1 className="text-5xl md:text-7xl font-bold mb-6">Local Roots, <span className="text-emerald-500">Global Standards.</span></h1>
