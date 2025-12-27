@@ -92,7 +92,7 @@ const About = () => {
         <div className="max-w-5xl mx-auto px-4 text-center relative z-10">
           <h2 className="text-4xl font-bold mb-10">Dedicated to Clearwater County</h2>
           <img
-            src="./images/adam-winger-FJtz_ASf_BI-unsplash.jpg"
+            src="images/adam-winger-FJtz_ASf_BI-unsplash.jpg"
             alt="Scenic Orofino"
             className="w-full h-[500px] object-cover rounded-3xl shadow-2xl mb-12"
           />

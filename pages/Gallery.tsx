@@ -3,16 +3,16 @@ import React, { useState } from 'react';
 import { X, Maximize2 } from 'lucide-react';
 
 const galleryImages = [
-  { url: './images/adam-winger-FJtz_ASf_BI-unsplash.jpg', caption: 'Stunning mountain backdrop of our facility.' },
-  { url: './images/adam-winger--BQbmDlDE70-unsplash.jpg', caption: 'Exterior units with security camera protection.' },
-  { url: './images/aga-adamek-9OfBsfty2x4-unsplash.jpg', caption: 'Clean and bright yellow interior unit rows.' },
-  { url: './images/Gemini_Generated_Image_3h2th13h2th13h2t.png', caption: 'Modern blue-door indoor hallway.' },
-  { url: './images/joshua-coleman-ZVkDLrXGMdw-unsplash.jpg', caption: 'Pristine red-door indoor storage hallway.' },
-  { url: './images/yujie-han-5e88u6DZCBo-unsplash.jpg', caption: 'Heavy-duty night security gate.' },
-  { url: './images/moj-box-Kd-YlHSvS-o-unsplash.jpg', caption: 'Specialized container storage interior.' },
-  { url: './images/declan-sun-6N6EXN0x_E4-unsplash.jpg', caption: 'Organized inventory and business storage.' },
-  { url: './images/dominik-klos-Xut2TlI4KO4-unsplash.jpg', caption: 'Night-time facility surveillance view.' },
-  { url: './images/kenny--ZleE9ovqXI-unsplash.jpg', caption: 'Classic indoor unit accessibility.' },
+  { url: 'images/adam-winger-FJtz_ASf_BI-unsplash.jpg', caption: 'Stunning mountain backdrop of our facility.' },
+  { url: 'images/adam-winger--BQbmDlDE70-unsplash.jpg', caption: 'Exterior units with security camera protection.' },
+  { url: 'images/aga-adamek-9OfBsfty2x4-unsplash.jpg', caption: 'Clean and bright yellow interior unit rows.' },
+  { url: 'images/Gemini_Generated_Image_3h2th13h2th13h2t.png', caption: 'Modern blue-door indoor hallway.' },
+  { url: 'images/yujie-han-5e88u6DZCBo-unsplash.jpg', caption: 'Heavy-duty night security gate.' },
+  { url: 'images/joshua-coleman-ZVkDLrXGMdw-unsplash.jpg', caption: 'Pristine red-door indoor storage hallway.' },
+  { url: 'images/moj-box-Kd-YlHSvS-o-unsplash.jpg', caption: 'Specialized container storage interior.' },
+  { url: 'images/declan-sun-6N6EXN0x_E4-unsplash.jpg', caption: 'Organized inventory and business storage.' },
+  { url: 'images/dominik-klos-Xut2TlI4KO4-unsplash.jpg', caption: 'Night-time facility surveillance view.' },
+  { url: 'images/kenny--ZleE9ovqXI-unsplash.jpg', caption: 'Classic indoor unit accessibility.' },
 ];
 
 const Gallery = () => {
