@@ -45,7 +45,7 @@ const About = () => {
           </div>
           <div className="grid grid-cols-2 gap-6">
             <div className="space-y-6">
-              <img src="./images/Gemini_Generated_Image_3h2th13h2th13h2t.png" alt="Blue Door Hallway" className="rounded-2xl shadow-lg w-full h-80 object-cover" />
+              <img src="images/Gemini_Generated_Image_3h2th13h2th13h2t.png" alt="Blue Door Hallway" className="rounded-2xl shadow-lg w-full h-80 object-cover" />
               <div className="bg-emerald-600 p-8 rounded-2xl text-white text-center shadow-xl">
                 <p className="text-5xl font-black mb-2">15+</p>
                 <p className="text-sm font-bold uppercase tracking-widest">Years in Service</p>
@@ -56,7 +56,7 @@ const About = () => {
                 <p className="text-5xl font-black mb-2">100%</p>
                 <p className="text-sm font-bold uppercase tracking-widest">Gated Security</p>
               </div>
-              <img src="./images/joshua-coleman-ZVkDLrXGMdw-unsplash.jpg" alt="Red Door Hallway" className="rounded-2xl shadow-lg w-full h-80 object-cover" />
+              <img src="images/joshua-coleman-ZVkDLrXGMdw-unsplash.jpg" alt="Red Door Hallway" className="rounded-2xl shadow-lg w-full h-80 object-cover" />
             </div>
           </div>
         </div>
