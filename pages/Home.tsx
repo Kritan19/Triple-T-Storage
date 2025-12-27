@@ -39,7 +39,7 @@ const Home = () => {
       <section className="relative h-[85vh] flex items-center">
         <div className="absolute inset-0">
           <img
-            src="./images/adam-winger-FJtz_ASf_BI-unsplash.jpg"
+            src="images/adam-winger-FJtz_ASf_BI-unsplash.jpg"
             alt="Triple T Storage Facility"
             className="w-full h-full object-cover"
           />
@@ -157,7 +157,7 @@ const Home = () => {
           </div>
           <div className="flex-1 relative">
             <img
-              src="./images/adam-winger--BQbmDlDE70-unsplash.jpg"
+              src="images/adam-winger--BQbmDlDE70-unsplash.jpg"
               alt="Triple T Units"
               className="rounded-2xl shadow-2xl relative z-10 w-full"
             />
