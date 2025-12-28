@@ -3,7 +3,7 @@
 
 Professional, responsive website for Triple T Storage in Orofino, ID.
 
-# Live deno :
+# Live demo :
    https://kritan19.github.io/Triple-T-Storage/
 
 ## Tech Stack
