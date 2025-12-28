@@ -1,13 +1,18 @@
-
 import React from 'react';
 import { Shield, Users, MapPin, CheckCircle } from 'lucide-react';
+
+// Import images (adjust path if you moved to src/images)
+import ScenicBg from '../images/adam-winger-FJtz_ASf_BI-unsplash.jpg';
+import BlueDoor from '../images/Gemini_Generated_Image_3h2th13h2th13h2t.png';
+import RedDoor from '../images/joshua-coleman-ZVkDLrXGMdw-unsplash.jpg';
+import ScenicOrofino from '../images/adam-winger-FJtz_ASf_BI-unsplash.jpg';
 
 const About = () => {
   return (
     <div className="bg-white">
       <section className="relative py-32 bg-slate-900 text-white overflow-hidden">
         <div className="absolute inset-0 opacity-40">
-          <img src="images/adam-winger-FJtz_ASf_BI-unsplash.jpg" alt="Background Scenic" className="w-full h-full object-cover" />
+          <img src={ScenicBg} alt="Background Scenic" className="w-full h-full object-cover" />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 text-center">
           <h1 className="text-5xl md:text-7xl font-bold mb-6">Local Roots, <span className="text-emerald-500">Global Standards.</span></h1>
@@ -45,7 +50,7 @@ const About = () => {
           </div>
           <div className="grid grid-cols-2 gap-6">
             <div className="space-y-6">
-              <img src="images/Gemini_Generated_Image_3h2th13h2th13h2t.png" alt="Blue Door Hallway" className="rounded-2xl shadow-lg w-full h-80 object-cover" />
+              <img src={BlueDoor} alt="Blue Door Hallway" className="rounded-2xl shadow-lg w-full h-80 object-cover" />
               <div className="bg-emerald-600 p-8 rounded-2xl text-white text-center shadow-xl">
                 <p className="text-5xl font-black mb-2">15+</p>
                 <p className="text-sm font-bold uppercase tracking-widest">Years in Service</p>
@@ -56,7 +61,7 @@ const About = () => {
                 <p className="text-5xl font-black mb-2">100%</p>
                 <p className="text-sm font-bold uppercase tracking-widest">Gated Security</p>
               </div>
-              <img src="images/joshua-coleman-ZVkDLrXGMdw-unsplash.jpg" alt="Red Door Hallway" className="rounded-2xl shadow-lg w-full h-80 object-cover" />
+              <img src={RedDoor} alt="Red Door Hallway" className="rounded-2xl shadow-lg w-full h-80 object-cover" />
             </div>
           </div>
         </div>
@@ -92,7 +97,7 @@ const About = () => {
         <div className="max-w-5xl mx-auto px-4 text-center relative z-10">
           <h2 className="text-4xl font-bold mb-10">Dedicated to Clearwater County</h2>
           <img
-            src="images/adam-winger-FJtz_ASf_BI-unsplash.jpg"
+            src={ScenicOrofino}
             alt="Scenic Orofino"
             className="w-full h-[500px] object-cover rounded-3xl shadow-2xl mb-12"
           />

@@ -1,4 +1,3 @@
-
 {
   "compilerOptions": {
     "target": "ESNext",
@@ -15,8 +14,17 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+
+    // These two lines are crucial for Vite asset imports (images, svg, etc.)
+    "types": ["vite/client"],
+    "allowImportingTsExtensions": true
   },
-  "include": ["./**/*.ts", "./**/*.tsx"],
-  "exclude": ["node_modules"]
+  "include": [
+    "src",                    // Includes everything inside src/
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.d.ts"           // Ensures .d.ts files like vite-env.d.ts are picked up
+  ],
+  "exclude": ["node_modules", "dist"]
 }

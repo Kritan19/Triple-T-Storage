@@ -1,7 +1,11 @@
-
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Shield, Clock, DollarSign, ChevronLeft, ChevronRight, Star } from 'lucide-react';
+
+// Import images so Vite processes them correctly (critical for GitHub Pages base path)
+import HeroBackground from '../images/adam-winger-FJtz_ASf_BI-unsplash.jpg';        // Scenic hero background
+import FacilityExterior from '../images/adam-winger--BQbmDlDE70-unsplash.jpg';        // Lower section facility photo
+// Optional: You can change these to any other image from your images folder
 
 const testimonials = [
   {
@@ -36,19 +40,22 @@ const Home = () => {
 
   return (
     <div className="flex flex-col">
-      <section className="relative h-[85vh] flex items-center">
+      {/* Hero Section with Imported Background Image */}
+      <section className="relative h-[85vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="images/adam-winger-FJtz_ASf_BI-unsplash.jpg"
-            alt="Triple T Storage Facility"
+            src={HeroBackground}
+            alt="Triple T Storage Facility - Orofino, Idaho"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-900/40 to-transparent"></div>
         </div>
+
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full text-white">
           <div className="max-w-2xl">
             <h1 className="text-6xl md:text-8xl font-bold mb-6 tracking-tight leading-none">
-              TRIPLE T<br/><span className="text-emerald-500">STORAGE</span>
+              TRIPLE T<br />
+              <span className="text-emerald-500">STORAGE</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 font-medium text-slate-200">
               Your Secure Space in Orofino, Idaho.
@@ -57,10 +64,16 @@ const Home = () => {
               Reliable, family-owned storage solutions directly on Highway 12. Protecting what matters to you since 2005.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link to="/units" className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-4 rounded-md font-bold text-center transition-all shadow-lg transform hover:-translate-y-1">
+              <Link
+                to="/units"
+                className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-4 rounded-md font-bold text-center transition-all shadow-lg transform hover:-translate-y-1"
+              >
                 Explore Units
               </Link>
-              <Link to="/contact" className="bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white hover:text-slate-900 text-white px-8 py-4 rounded-md font-bold text-center transition-all">
+              <Link
+                to="/contact"
+                className="bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white hover:text-slate-900 text-white px-8 py-4 rounded-md font-bold text-center transition-all"
+              >
                 Get a Free Quote
               </Link>
             </div>
@@ -68,10 +81,13 @@ const Home = () => {
         </div>
       </section>
 
+      {/* The Triple T Advantage */}
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4 uppercase tracking-wider">The Triple T Advantage</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4 uppercase tracking-wider">
+              The Triple T Advantage
+            </h2>
             <div className="w-20 h-1.5 bg-emerald-500 mx-auto"></div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -100,15 +116,21 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Testimonials Carousel */}
       <section className="py-24 bg-slate-900 text-white overflow-hidden relative">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-16 text-emerald-400">Trusted by Orofino Residents</h2>
           <div className="relative">
-            <div className="flex transition-transform duration-500 ease-in-out" style={{ transform: `translateX(-${currentTestimonial * 100}%)` }}>
+            <div
+              className="flex transition-transform duration-500 ease-in-out"
+              style={{ transform: `translateX(-${currentTestimonial * 100}%)` }}
+            >
               {testimonials.map((t, i) => (
                 <div key={i} className="min-w-full px-4">
                   <div className="flex justify-center mb-6">
-                    {[1, 2, 3, 4, 5].map((s) => <Star key={s} fill="#10b981" className="text-emerald-500 mx-0.5" size={20} />)}
+                    {[1, 2, 3, 4, 5].map((s) => (
+                      <Star key={s} fill="#10b981" className="text-emerald-500 mx-0.5" size={20} />
+                    ))}
                   </div>
                   <blockquote className="text-2xl md:text-3xl italic font-light mb-8 leading-relaxed">
                     "{t.quote}"
@@ -138,6 +160,7 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Call to Action with Facility Image */}
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 flex flex-col lg:flex-row items-center gap-16">
           <div className="flex-1">
@@ -146,19 +169,30 @@ const Home = () => {
               From household goods to high-value recreational vehicles, we have the right size for you. Our facility is clean, dry, and built for the Idaho climate.
             </p>
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
-              <li className="flex items-center text-slate-700 font-medium"><Shield className="text-emerald-600 mr-3" size={20} /> Gated Entry & Fencing</li>
-              <li className="flex items-center text-slate-700 font-medium"><Shield className="text-emerald-600 mr-3" size={20} /> Clean, Dry Interiors</li>
-              <li className="flex items-center text-slate-700 font-medium"><Shield className="text-emerald-600 mr-3" size={20} /> Drive-up Convenience</li>
-              <li className="flex items-center text-slate-700 font-medium"><Shield className="text-emerald-600 mr-3" size={20} /> On-Site Surveillance</li>
+              <li className="flex items-center text-slate-700 font-medium">
+                <Shield className="text-emerald-600 mr-3" size={20} /> Gated Entry & Fencing
+              </li>
+              <li className="flex items-center text-slate-700 font-medium">
+                <Shield className="text-emerald-600 mr-3" size={20} /> Clean, Dry Interiors
+              </li>
+              <li className="flex items-center text-slate-700 font-medium">
+                <Shield className="text-emerald-600 mr-3" size={20} /> Drive-up Convenience
+              </li>
+              <li className="flex items-center text-slate-700 font-medium">
+                <Shield className="text-emerald-600 mr-3" size={20} /> On-Site Surveillance
+              </li>
             </ul>
-            <Link to="/contact" className="inline-block bg-slate-900 text-white px-10 py-4 rounded-lg font-bold hover:bg-emerald-600 transition-all shadow-lg">
+            <Link
+              to="/contact"
+              className="inline-block bg-slate-900 text-white px-10 py-4 rounded-lg font-bold hover:bg-emerald-600 transition-all shadow-lg"
+            >
               Contact Us Today
             </Link>
           </div>
           <div className="flex-1 relative">
             <img
-              src="images/adam-winger--BQbmDlDE70-unsplash.jpg"
-              alt="Triple T Units"
+              src={FacilityExterior}
+              alt="Triple T Storage Units"
               className="rounded-2xl shadow-2xl relative z-10 w-full"
             />
             <div className="absolute -bottom-6 -right-6 w-3/4 h-3/4 border-4 border-emerald-500/20 rounded-2xl -z-0"></div>

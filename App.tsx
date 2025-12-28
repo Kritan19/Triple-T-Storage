@@ -3,11 +3,11 @@ import React, { useState, useEffect } from 'react';
 import { HashRouter, Routes, Route, Link, useLocation } from 'react-router-dom';
 import { Menu, X, Phone, Mail, MapPin, Facebook, ExternalLink } from 'lucide-react';
 
-import Home from './pages/Home';
-import About from './pages/About';
-import Units from './pages/Units';
-import Gallery from './pages/Gallery';
-import Contact from './pages/Contact';
+import Home from './src/pages/Home';
+import About from './src/pages/About';
+import Units from './src/pages/Units';
+import Gallery from './src/pages/Gallery';
+import Contact from './src/pages/Contact';
 
 const Logo = () => (
   <svg className="w-10 h-10 mr-3" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
